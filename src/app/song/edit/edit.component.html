@@ -1,0 +1,18 @@
+<div class="container">
+    <legend>EDIT ITEM</legend>
+  <form>
+    <div class="mb-3">
+        <label for="txtTitle" class="form-label">TITLE</label>
+        <input type="text" name="name"  [(ngModel)]="formdata.title" class="form-control" id="txtTitle">
+    </div>
+    <div class="mb-3">
+        <label for="txtArtist" class="form-label">ARTIST</label>
+        <input type="text" name="artist"   [(ngModel)]="formdata.artist" class="form-control" id="txtArtist">
+    </div>
+    <div class="mb-3">
+        <label for="txtAlbum" class="form-label">ALBUM</label>
+        <input type="text" name="album"  [(ngModel)]="formdata.album" class="form-control" id="txtAlbum">
+    </div>
+    <button type="button" (click)="update()" class="btn btn-primary">UPDATE</button>
+  </form>
+</div>

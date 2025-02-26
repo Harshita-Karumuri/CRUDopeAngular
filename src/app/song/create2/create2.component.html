@@ -1,0 +1,22 @@
+<div class="container">
+    <legend>Create Song</legend>
+  <form>
+    <div class="mb-3">
+      <label for="txtid" class="form-label">ID</label>
+      <input type="text" name="id" [(ngModel)]=" formdata.id" class="form-control" id="txtid">
+  </div>
+    <div class="mb-3">
+        <label for="txttitle" class="form-label">TITLE</label>
+        <input type="text" name="name" [(ngModel)]=" formdata.title" class="form-control" id="txttitle">
+    </div>
+    <div class="mb-3">
+        <label for="txtartist" class="form-label">ARTIST</label>
+        <input type="text" name="artist" [(ngModel)]="formdata.artist" class="form-control" id="txtartist">
+    </div>
+    <div class="mb-3">
+        <label for="txtalbum" class="form-label">ALBUM</label>
+        <input type="text" name="album" [(ngModel)]=" formdata.album" class="form-control" id="txtalbum">
+    </div>
+    <button type="button" (click)="create()" class="btn btn-primary">CREATE</button>
+  </form>
+</div>
